@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/hauora.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="about.html" class="link header__link">О Компании</a>
+                <div class="header__media"><span></span><span></span></div>
+                <a href="home.html"><img src="assets/img/header/logo.svg" alt="" class="logo"></a>
+                <div class="search">
+                    <span>Поиск</span><img src="assets/img/header/search.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <div class="menu">
+                    <a href="catalog.html" class="link link--active">Новое</a>
+                    <a href="#" class="link">Лицо</a>
+                    <a href="#" class="link">Тело</a>
+                    <a href="#" class="link">Уход за волосами</a>
+                    <a href="#" class="link">Окрашивание</a>
+                    <a href="#" class="link">Для дома</a>
+                    <a href="brands.html" class="link">Бренды</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-media">
+            <div class="menu-media__header">
+                <p class="menu-media__title">меню</p>
+                <img src="assets/img/icons/close.svg" alt="x" class="menu-media__img">
+            </div>
+            <div class="menu-media__main">
+                <div class="menu-media__list">
+                    <a href="catalog.html" class="link">Новое</a>
+                    <a href="#" class="link">Лицо</a>
+                    <a href="#" class="link">Тело</a>
+                    <a href="#" class="link">УХОД ЗА ВОЛОСАМИ</a>
+                    <a href="#" class="link">Окрашивание</a>
+                    <a href="#" class="link">Для дома</a>
+                </div>
+                <div class="menu-media__list menu-media__list--small">
+                    <a href="#" class="link">БРЕНДЫ</a>
+                    <a href="#" class="link">О КОМПАНИИ</a>
+                    <a href="#" class="link">КОНТАКТЫ</a>
+                </div>
+            </div>
+            <div class="menu-media__footer">
+                <div class="menu-media__left">
+                    <a class="link menu-media__phone" href="tel:+74959268870">+7 (495) 926 88 70 </a>
+                    <a class="link menu-media__mail" href="mailto:info@gbcosmetic.ru">info@gbcosmetic.ru</a>
+                </div>
+                <div class="menu-media__right">
+                    <a href="#" class="link"><svg class="icon">
+                        <use xlink:href="assets/img/social/sprite.svg#icn_social_vk"></use>
+                      </svg></a>
+                    <a href="#" class="link"><svg class="icon">
+                        <use xlink:href="assets/img/social/sprite.svg#icn_social_telegram"></use>
+                    </svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="media-block">
+        <div class="media-block__title">
+            <p class="media-block__title-text">Выберите вариант</p>
+            <img class="media-block__close" src="assets/img/icons/close-media.svg" alt="x">
+        </div>
+        <div class="media-block__colors">
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio" checked="true">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-2.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-3.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-4.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-5.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-6.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-7.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-8.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+            <div class="media-block__color">
+                <div class="media-block__color-name">
+                    <img class="media-block__color-img" src="assets/img/colors/img_color-1.png" alt="">
+                    <span class="media-block__color-title">№ 4.37 Шоколадный каштан</span>
+                </div>
+                <input type="radio" name="color" class="media-block__color-radio">
+            </div>
+        </div>
+        <div class="media-block__buy">
+            <div class="product-card__buy">
+                <div class="product-card__shop ozon"><img src="assets/img/shop/logo_ozon.svg" alt=""></div>
+                <div class="product-card__shop wb"><img src="assets/img/shop/logo_wildberris.svg" alt=""></div>
+                <div class="product-card__shop vkusvil"><img src="assets/img/shop/logo_Vkusvill.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <section class="product-card mt-120">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="home.html">Главная</a><span> / </span><a href="catalog.html">Лицо</a><span> / </span><a href="product.html">Стойкая крем-краска для волос</a>
+            </div>
+            <div class="product-card__content">
+                <div class="product-card__left">
+                    <div class="product-card__card product">
+                        <div class="product__tags">
+                            <div class="product__tag">ECO</div>
+                            <div class="product__tag product__tag--fill">BEST</div>
+                        </div>
+                        <div class="product-card__product">
+                            <div class="product__slider swiper">
+                                <div class="product-card__stars">
+                                    <img src="assets/img/icons/star.svg" alt="star">
+                                    <span>4.5</span>
+                                </div>
+                                <div class="swiper-container swiper-product">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-3.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-4.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-5.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/cards/card-6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev1"></div>
+                                    <div class="swiper-button-next1"></div>
+                                </div>
+                            </div>
+                            <!-- <div class="slider__preview preview swiper">
+                                <div class="swiper-preview swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide preview-slide swiper-slide-active">
+                                            <img src="assets/img/cards/card-1.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide preview-slide">
+                                            <img src="assets/img/cards/card-2.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide preview-slide">
+                                            <img src="assets/img/cards/card-3.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide preview-slide">
+                                            <img src="assets/img/cards/card-4.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide preview-slide">
+                                            <img src="assets/img/cards/card-5.png" alt="">
+                                        </div>
+                                        <div class="swiper-slide preview-slide">
+                                            <img src="assets/img/cards/card-6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev4"></div>
+                                <div class="swiper-button-next4"></div>
+                            </div> -->
+
+                            <div class="slider__preview preview">
+                                <div class="vertical-slider">
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-1.png" alt="">
+                                    </div>
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-2.png" alt="">
+                                    </div>
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-3.png" alt="">
+                                    </div>
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-4.png" alt="">
+                                    </div>
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-5.png" alt="">
+                                    </div>
+                                    <div class="slick-slide preview-slide">
+                                        <img src="assets/img/cards/card-6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev4"></div>
+                                <div class="swiper-button-next4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__media-info media-info">
+                        <p class="product-card__brand">BEAUTY FERMA</p>
+                        <p class="product-card__title">Стойкая крем-краска для волос, № 4.37 Шоколадный каштан</p>
+                        <div class="product-card__info">
+                            <p class="product-card__scope">650 мл</p>
+                            <p class="articul">артикул: GB-824</p>
+                        </div>
+                        <div class="product-card__colors colors">
+                            <div class="colors__title">
+                                <p class="product-card__name-color">№ 4.37 Шоколадный каштан</p>
+                                <p class="colors__more">Все 15 вариантов <img src="assets/img/icons/arrow-right-product.svg" alt=">"></p>
+                            </div>
+                            <div class="product-card__colors-items">
+                                <div data-name="№ 4.37 Шоколадный каштан" class="product-card__color product-card__color--active"><img src="assets/img/colors/img_color.png" alt=""></div>
+                                <div data-name="№ 4.38 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-1.png" alt=""></div>
+                                <div data-name="№ 4.39 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-2.png" alt=""></div>
+                                <div data-name="№ 4.40 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-3.png" alt=""></div>
+                                <div data-name="№ 4.41 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-4.png" alt=""></div>
+                                <div data-name="№ 4.42 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-5.png" alt=""></div>
+                                <div data-name="№ 4.43 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-6.png" alt=""></div>
+                                <div data-name="№ 4.44 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-7.png" alt=""></div>
+                                <div data-name="№ 4.45 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-8.png" alt=""></div>
+                                <div data-name="№ 4.46 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-9.png" alt=""></div>
+                                <div data-name="№ 4.47 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-10.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="fixed">
+                            <!-- <div class="container"> -->
+                            <div class="media-info__shops shops">
+                                <p class="shops__title">Купить</p>
+                                <div class="shops__content">
+                                    <div class="shops__shop">
+                                        <img class="shops__img" src="assets/img/shop/media-ozon.png" alt="">
+                                        <img class="shops__img" src="assets/img/shop/media-wb.png" alt="">
+                                    </div>
+                                    <img class="shops__arrow" src="assets/img/icons/arrow-right-product.svg" alt=">">
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="product-card__characteristics characteristics">
+                        <div class="characteristics__item">
+                            <img src="assets/img/characteristics/icn_cleansing.svg" alt="" class="characteristics__img">
+                            <div class="characteristics__content">
+                                <h4 class="characteristics__title">Мягкое очищение</h4>
+                                <p class="characteristics__text">Удобный дозатор-помпа обеспечивает дозирование нужного количества продукта, что делает его более экономичным и снижает потерю продукта. </p>
+                            </div>
+                        </div>
+                        <div class="characteristics__item">
+                            <img src="assets/img/characteristics/icn_dispenser.svg" alt="" class="characteristics__img">
+                            <div class="characteristics__content">
+                                <h4 class="characteristics__title">Удобный дозатор</h4>
+                                <p class="characteristics__text">Удобный дозатор-помпа обеспечивает дозирование нужного количества продукта, что делает его более экономичным и снижает потерю продукта. </p>
+                            </div>
+                        </div>
+                        <div class="characteristics__item">
+                            <img src="assets/img/characteristics/icn_moistening.svg" alt="" class="characteristics__img">
+                            <div class="characteristics__content">
+                                <h4 class="characteristics__title">Увлажнение кожи</h4>
+                                <p class="characteristics__text">Это особенно важно для такого продукта, как масло для умывания, которое предназначено для очищения кожи.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__data data">
+                        <ul class="data__filter">
+                            <li data-name="ingr" class="data__filter--text data__filter--active">Ингредиенты</li>
+                            <li data-name="desc" class="data__filter--text">Описание</li>
+                            <li data-name="method" class="data__filter--text">Способ применения</li>
+                            <li data-name="structure" class="data__filter--text">Состав</li>
+                            <li class="underline"></li>
+                            <li data-name="dop" class="data__filter--text">Особые указания</li>
+                        </ul>
+                        <div class="data__content">
+                            <div class="data__ingridients data__item">
+                                <div class="data__content--media">
+                                    <div class="title">Ингредиенты</div>
+                                    <img src="assets/img/icons/arrow-top.svg" alt="">
+                                </div>
+                                <div class="ingridients">
+                                    <div class="ingridients__item">
+                                        <img src="assets/img/ingridients/image 97.png" alt="">
+                                        <p>Анисовое масло</p>
+                                    </div>
+                                    <div class="ingridients__item">
+                                        <img src="assets/img/ingridients/image 98.png" alt="">
+                                        <p>Масло Жожоба</p>
+                                    </div>
+                                    <div class="ingridients__item">
+                                        <img src="assets/img/ingridients/image 99.png" alt="">
+                                        <p>Экстракт бамбука</p>
+                                    </div>
+                                    <div class="ingridients__item">
+                                        <img src="assets/img/ingridients/image 100.png" alt="">
+                                        <p>Экстракт хмеля</p>
+                                    </div>
+                                    <div class="ingridients__item">
+                                        <img src="assets/img/ingridients/image 101.png" alt="">
+                                        <p>Протеин овса</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data__description data__item">
+                                <div class="data__content--media">
+                                    <div class="title">Описание</div>
+                                    <img src="assets/img/icons/arrow-top.svg" alt="">
+                                </div>
+                                <p>Миндальное гидрофильное масло для умывания и снятия макияжа. Марокканская роза на основе масел с добавлением перемолотых трав и цветов мягко очищает кожу, придает тонус и окутывает нежной цветочной дымкой.</p>
+                                <p>Масла оливы, арганы и розы глубоко питают кожу и придают ей неповторимый аромат. Лепестки роз в составе мыла делают кожу более гладкой и нежной.</p>
+                            </div>
+                            <div class="data__method method data__item">
+                                <div class="data__content--media">
+                                    <div class="title">способ применения</div>
+                                    <img src="assets/img/icons/arrow-top.svg" alt="">
+                                </div>
+                                <p>Небольшое количество крема нанесите на чистую сухую кожу лица и шеи, оставьте до полного впитывания. Подходит для ежедневного использования.</p>
+                                <p>Рекомендовано: для любого типа кожи</p>
+                                <p>Эффект: очищение, тонус, увлажнение, сияние</p>
+                            </div>
+                            <div class="data__structure structure data__item">
+                                <div class="data__content--media">
+                                    <div class="title">состав</div>
+                                    <img src="assets/img/icons/arrow-top.svg" alt="">
+                                </div>
+                                <p>Aqua, Olea Europaea Fruit Oil (Масло Оливы), Vitis Vinifera Seed Oil (масло виноградной косточки), Daucus Carota Sativa Seed Oil (Масло Семян Моркови), Persea Gratissima Оil (Масло Авокадо), Crocus Sativus Flower Extract
+                                    (Экстракт Шафрана), Chamomilla Recutita Extract (Экстракт Ромашки), Caprylic / capric triglyceride, Glycerin, Cetearyl Alcohol, Glyceryl Stearate, Acrylates/Vinyl Isodecanoate Crosspolymer, Citrus Aurantium Bergamia
+                                    Fruit Oil, Lavandula Officinalis Flower Oil, Pelargonium Graveolens Oil, Parfum, Benzyl Alcohol.</p>
+                            </div>
+                            <div class="data__dop dop data__item">
+                                <div class="data__content--media">
+                                    <div class="title">особые указания</div>
+                                    <img src="assets/img/icons/arrow-top.svg" alt="">
+                                </div>
+                                <p>Противопоказания: нет</p>
+                                <p>Меры предосторожности: Для наружного применения. Хранить в недоступном для детей месте. При попадании в глаза — промыть водой. Возможна индивидуальная непереносимость компонентов.</p>
+                                <p>Условия хранения: Хранить при температуре от 0 °С до +25 °С, в недоступном для детей месте.</p>
+                                <p>Срок годности: 24 месяца с даты производства</p>
+                            </div>
+                        </div>
+                        <div class="data__rewievs rewievs">
+                            <h2 class="title rewievs__title">Отзывы</h2>
+                            <div class="rewievs__count">
+                                <p class="rewievs__num">4,5</p>
+                                <div class="rewievs__more">
+                                    <div class="rewievs__stars stars product-card__stars">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star-half.svg" alt="">
+                                    </div>
+                                    <p class="rewievs__count--text">204 отзыва</p>
+                                </div>
+                            </div>
+
+                            <div class="rewievs__table rewievs-table">
+                                <div class="rewievs-table__item">
+                                    <div class="rewievs-table__person">
+                                        <p class="rewievs-table__name">Марина</p>
+                                        <p class="rewievs-table__date">23.04.23</p>
+                                    </div>
+                                    <div class="rewievs-table__rewiev">
+                                        <div class="rewievs-table__stars product-card__stars">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star-half.svg" alt="">
+                                        </div>
+                                        <div class="rewievs-table__text hide">
+                                            Купила такую краску в магазине, долго она лежала и ждала своего часа. Тут решила покрасить брови и ресницы. Легко и просто оказалось, очень хорошо получилось. Решила купить ещё. Все пришло целое, хорошо упаковано и с хорошими сроками годности. Спасибо
+                                            большое 🤩
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rewievs-table__item">
+                                    <div class="rewievs-table__person">
+                                        <p class="rewievs-table__name">Василина</p>
+                                        <p class="rewievs-table__date">23.04.23</p>
+                                    </div>
+                                    <div class="rewievs-table__rewiev">
+                                        <div class="rewievs-table__stars product-card__stars">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star-half.svg" alt="">
+                                        </div>
+                                        <div class="rewievs-table__text hide">Спасибо большое за краску это самая лучшая краска для бровей несмотря на свою маленькую цену красит лучше всех дорогих красок, а я их перепробывала немало. Лучше этой краски нет супер красит и долго не смывается.Уже
+                                            много лет только ей пользуюсь,краска супер.Большое спасибо.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rewievs-table__item">
+                                    <div class="rewievs-table__person">
+                                        <p class="rewievs-table__name">Светлана</p>
+                                        <p class="rewievs-table__date">23.04.23</p>
+                                    </div>
+                                    <div class="rewievs-table__rewiev">
+                                        <div class="rewievs-table__stars product-card__stars">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star.svg" alt="">
+                                            <img src="assets/img/icons/star-half.svg" alt="">
+                                        </div>
+                                        <div class="rewievs-table__text hide">Хорошая краска. Мягкая консистенция, легко наносится кистью. Можно дольше 15 мин подержать.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-s btn--neutral btn-l rewievs__btn">Показать еще</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product-card__right">
+                    <p class="product-card__brand">BEAUTY FERMA</p>
+                    <p class="product-card__title">Стойкая крем-краска для волос, № 4.37 Шоколадный каштан</p>
+                    <div class="product-card__info">
+                        <p class="product-card__scope">650 мл</p>
+                        <p class="articul">артикул: GB-824</p>
+                    </div>
+                    <div class="product-card__rewievs">
+                        <div class="product-card__stars">
+                            <img src="assets/img/icons/star.svg" alt="">
+                            <img src="assets/img/icons/star.svg" alt="">
+                            <img src="assets/img/icons/star.svg" alt="">
+                            <img src="assets/img/icons/star.svg" alt="">
+                            <img src="assets/img/icons/star-half.svg" alt="">
+                        </div>
+                        <span class="product-card__count">4,5</span>
+                        <span class="product-card__count-text">24 отзыва</span>
+                    </div>
+                    <p class="product-card__text">Миндальное гидрофильное масло для умывания и снятия макияжа. Марокканская роза на основе масел с добавлением перемолотых трав и цветов мягко очищает кожу, придает тонус и окутывает нежной цветочной дымкой.</p>
+                    <p class="product-card__more">Узнать больше</p>
+                    <div class="product-card__colors">
+                        <p class="product-card__name-color">№ 4.37 Шоколадный каштан</p>
+                        <div class="product-card__colors-items">
+                            <div data-name="№ 4.37 Шоколадный каштан" class="product-card__color product-card__color--active"><img src="assets/img/colors/img_color.png" alt=""></div>
+                            <div data-name="№ 4.38 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-1.png" alt=""></div>
+                            <div data-name="№ 4.39 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-2.png" alt=""></div>
+                            <div data-name="№ 4.40 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-3.png" alt=""></div>
+                            <div data-name="№ 4.41 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-4.png" alt=""></div>
+                            <div data-name="№ 4.42 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-5.png" alt=""></div>
+                            <div data-name="№ 4.43 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-6.png" alt=""></div>
+                            <div data-name="№ 4.44 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-7.png" alt=""></div>
+                            <div data-name="№ 4.45 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-8.png" alt=""></div>
+                            <div data-name="№ 4.46 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-9.png" alt=""></div>
+                            <div data-name="№ 4.47 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-10.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="product-card__shops">
+                        <p class="product-card__shops-title">Купить на маркетплейсах</p>
+                        <div class="product-card__buy">
+                            <div class="product-card__shop ozon"><img src="assets/img/shop/logo_ozon.svg" alt=""></div>
+                            <div class="product-card__shop wb"><img src="assets/img/shop/logo_wildberris.svg" alt=""></div>
+                            <div class="product-card__shop vkusvil"><img src="assets/img/shop/logo_Vkusvill.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider recommend">
+        <div class="container">
+            <div class="slider__content">
+                <div class="slider__header">
+                    <h2 class="title slider__title">Рекомендуем вам</h2>
+                    <img src="assets/img/icons/arrow-right.svg" alt=">">
+                </div>
+                <div class="slider__slider reccomend__slider swiper">
+                    <div class="swiper-container reccomend-slider">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-1.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-2.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-3.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-4.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-5.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-6.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-6.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev2"></div>
+                <div class="swiper-button-next2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="slider recommend">
+        <div class="container">
+            <div class="slider__content">
+                <div class="slider__header">
+                    <h2 class="title slider__title">Вы просматривали</h2>
+                    <img src="assets/img/icons/arrow-right.svg" alt=">">
+                </div>
+                <div class="slider__slider reccomend__slider swiper">
+                    <div class="swiper-container reccomend-slider">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-1.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-2.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-3.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-4.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-5.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-6.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__tags">
+                                    <div class="tag">ECO</div>
+                                    <div class="tag tag--active">BEST</div>
+                                </div>
+                                <div class="card__img"><img src="assets/img/cards/card-6.png" alt="product"></div>
+                                <div class="card__info">
+                                    <p class="card__title">BEAUTY FERMA</p>
+                                    <p class="card__desc">Скраб-гоммаж для гладкости кожи</p>
+                                    <div class="card__btn">
+                                        <div class="btn-s btn-s--default">Подробнее</div>
+                                        <div class="btn-s btn-s--secondary">Купить</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev2"></div>
+                <div class="swiper-button-next2"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__ul">
+                    <ul>
+                        <li class="footer-title">
+                            <a href="#" class="link title-link">Каталог</a>
+                            <img class="footer__media" src="assets/img/icons/icn_shevron.svg" alt=">">
+                        </li>
+                        <li>
+                            <a href="#" class="link">Новое</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Уход за лицом</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Уход за телом</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Окрашивание</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Уход за волосами</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Для дома</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="footer-title">
+                            <a href="#" class="link title-link">Бренды</a>
+                            <img class="footer__media" src="assets/img/icons/icn_shevron.svg" alt=">">
+                        </li>
+                        <li>
+                            <a href="#" class="link">Only Bio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Miss Organuc</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Estetique</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Beauty Ferma</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Stylist Pro</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Все бренды</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="footer-title">
+                            <a href="#" class="link title-link">Покупателям</a>
+                            <img class="footer__media" src="assets/img/icons/icn_shevron.svg" alt=">">
+                        </li>
+                        <li>
+                            <a href="#" class="link">Бренды</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Сертификаты на продукцию</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Каталог ингридиентов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__media">
+                        <a href="#" class="link title-link">Контакты</a>
+                    </ul>
+                </div>
+
+                <div class="footer__contacts">
+                    <a href="tel:+74959268870" class="link footer__phone">+7 (495) 926 88 70 </a>
+                    <span>107553, г. Москва, ул. 1-я Пугачевская, 25с1</span>
+                    <a href="mailto:info@gbcosmetic.ru" class="link footer__mail">info@gbcosmetic.ru</a>
+                    <div class="footer__social">
+                        <a href="#" class="link"><svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#icn_social_vk"></use>
+                          </svg></a>
+                        <a href="#" class="link"><svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#icn_social_telegram"></use>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+            <span class="footer__text">© 2023 АО Global Bio. Все права защищены</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.js"></script>
+</body>
+
+</html>
