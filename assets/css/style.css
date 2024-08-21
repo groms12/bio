@@ -1580,6 +1580,14 @@ body {
     position: relative;
 }
 
+@media screen and (max-width: 950px) {
+    .banner img {
+        height: 52vh !important;
+        -o-object-fit: cover;
+        object-fit: cover !important;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .brands__title {
         font-size: 44px;
@@ -3754,6 +3762,18 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .banner img {
+        max-height: 100% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner img {
+        height: 340px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .product-card__stars {
         display: flex !important;
@@ -3940,9 +3960,6 @@ body {
     }
     .footer__ul li:first-child {
         width: 90vw;
-    }
-    .banner img {
-        height: 384px;
     }
     .banner__title {
         font-size: 32px;

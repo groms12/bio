@@ -66,7 +66,7 @@ const swiper3 = new Swiper(".swiper-banner", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     clickable: true,
     pagination: {
         el: '.swiper-pagination',
