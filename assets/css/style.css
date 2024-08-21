@@ -343,6 +343,8 @@ body {
     bottom: 0;
     right: 48px;
     width: 160px;
+    max-height: 90%;
+    object-fit: contain;
 }
 
 .brand__title {
