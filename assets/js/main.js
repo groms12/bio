@@ -65,34 +65,54 @@ const swiper2 = new Swiper(".swiper-about", {
 const swiper3 = new Swiper(".swiper-banner", {
     slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
+    autoplay: true,
+    clickable: true,
     pagination: {
         el: '.swiper-pagination',
         draggable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next5",
+        prevEl: ".swiper-button-prev5",
     },
 });
 const swiper4 = new Swiper(".swiper-product", {
     slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
     navigation: {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
     },
+    breakpoints: {
+        0: {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        },
+        768: {
+            pagination: false
+        }
+    }
 });
-// делать 1 активный слайд, подбивать высоту контейнера.
-// const swiper5 = new Swiper(".swiper-preview", {
-//     slidesPerView: 4,
-//     direction: 'vertical',
-//     spaceBetween: 6,
-//     centered: true,
-//     loop: true,
-//     clickable: true,
-//     navigation: {
-//         nextEl: ".swiper-button-next4",
-//         prevEl: ".swiper-button-prev4",
-//     },
-// });
-
-
+$('.search__del').click(function() {
+    $('.search__inp').val('');
+});
+$('.search').click(function() {
+    $('.header__search').toggleClass('header__search--active')
+        // var top = document.querySelector('header').getBoundingClientRect().bottom;
+        // $('.header__search').css('top', top);
+    if ($('.header__search').hasClass("header__search--active")) {
+        $('body').css('overflow-y', 'hidden');
+        $('.search__close').css('display', 'block');
+        $('.search__open').css('display', 'none');
+    } else {
+        $('body').css('overflow-y', 'auto');
+        $('.search__close').css('display', 'none');
+        $('.search__open').css('display', 'block');
+    }
+});
 window.onscroll = (function() {
     var lastScrollTop = 0;
     return function() {
@@ -101,51 +121,20 @@ window.onscroll = (function() {
             if (st > lastScrollTop) { // скролл вниз
                 document.querySelector('header').style.background = '#fff';
                 document.querySelector('.header__top').style.display = 'none';
+                document.querySelector('.header-menu').style.border = 'none';
             } else if (st < lastScrollTop) { // скролл вверх
                 document.querySelector('.header__top').style.animation = 'ani 0.5s forwards';
                 document.querySelector('.header__top').style.display = 'flex';
                 if (document.querySelector('header').getBoundingClientRect().top == document.querySelector('body').getBoundingClientRect().top) {
                     document.querySelector('header').style.background = 'none';
+                    document.querySelector('.header-menu').style.borderBottom = '1px solid var(--gray-05, rgba(18, 35, 51, 0.15)) ';
                 }
             }
             lastScrollTop = st;
         }
     }
 })();
-// соединение двух слайдеров
-swiper4.on('slideChange', function() {
-    var index = swiper4.activeIndex;
-    $('.preview-slide').removeClass('swiper-slide-active');
-    $('.preview-slide[data-index="' + index + '"]').addClass('swiper-slide-active');
-    if (index == 4) {
-        // вот тут надо хорошо подумать
-        $('.preview-slide').css('transform', 'translateY(-300px)');
-    }
-    // и как-то в обратную сторону
-});
-$('.swiper-button-next4').click(function() {
-    var index = $('.preview-slide.swiper-slide-active').data('index');
-    if (index != $('.preview-slide').length - 1) {
-        if (index + 1 == 4) {
-            $('.preview-slide').css('transform', 'translateY(-300px)');
-        }
-        $('.preview-slide').removeClass('swiper-slide-active');
-        $('.preview-slide[data-index="' + (index + 1) + '"]').addClass('swiper-slide-active');
-        swiper4.slideTo(index + 1);
-    }
-})
-$('.swiper-button-prev4').click(function() {
-    var index = $('.preview-slide.swiper-slide-active').data('index');
-    if (index != 0) {
-        if (index + 1 == 5) {
-            // вот тут надо хорошо подумать
-            $('.preview-slide').css('transform', 'translateY(100px)');
-        }
-        $('.preview-slide').removeClass('swiper-slide-active');
-        $('.preview-slide[data-index="' + (index - 1) + '"]').addClass('swiper-slide-active');
-        swiper4.slideTo(index - 1);
-    }
-})
+
 var flag = 0
 $('.footer-title').click(function() {
     if (flag == 0) {
@@ -163,39 +152,36 @@ $('.data__filter--text').click(function() {
     $('.data__filter--text').removeClass('data__filter--active');
     $(this).addClass('data__filter--active');
     // для примера изменение (можно делать скрытие и открытие блоков)
-    if ($(this).attr('data-name') == 'ingr') {
-        $('.data__content').html('<div class="data__ingridients ingridients">' +
-            '<div class="ingridients__item">' +
-            '    <img src="assets/img/ingridients/image 97.png" alt="">' +
-            '    <p>Анисовое масло</p>' +
-            '</div>' +
-            '<div class="ingridients__item">' +
-            '    <img src="assets/img/ingridients/image 98.png" alt="">' +
-            '    <p>Масло Жожоба</p>' +
-            '</div>' +
-            '<div class="ingridients__item">' +
-            '    <img src="assets/img/ingridients/image 99.png" alt="">' +
-            '    <p>Экстракт бамбука</p>' +
-            '</div>' +
-            '<div class="ingridients__item">' +
-            '    <img src="assets/img/ingridients/image 100.png" alt="">' +
-            '    <p>Экстракт хмеля</p>' +
-            '</div>' +
-            '<div class="ingridients__item">' +
-            '    <img src="assets/img/ingridients/image 101.png" alt="">' +
-            '    <p>Протеин овса</p>' +
-            '</div>' +
-            '</div>');
-    } else {
-        $('.data__content').html('Купила такую краску в магазине, долго она лежала и ждала своего часа. Тут решила покрасить брови и ресницы. Легко и просто оказалось, очень хорошо получилось. Решила купить ещё. Все пришло целое, хорошо упаковано и с хорошими сроками годности. Спасибо');
+    $('.data__item').css('display', 'none');
+    switch ($(this).attr('data-name')) {
+        case 'ingr':
+            $('.data__ingridients').css('display', 'block');
+            break;
+        case 'desc':
+            $('.data__description').css('display', 'block');
+            break;
+        case 'method':
+            $('.data__method').css('display', 'block');
+            break;
+        case 'structure':
+            $('.data__structure').css('display', 'block');
+            break;
+        case 'dop':
+            $('.data__dop').css('display', 'block');
+            break;
     }
+
 })
 var count = 456;
 $('.filter').click(function() {
-    // $('.filter').removeClass('filter--active'); // если можно только один активный фильтр
-    $(this).toggleClass('filter--active');
-    count = 1 + Math.floor(Math.random() * 456);
-    $('.filters-block .btn').text('Показать еще ' + count + ' товаров');
+    if ($(this).hasClass('filter-product')) {
+        $(this).toggleClass('filter--active');
+        count = 1 + Math.floor(Math.random() * 456);
+        $('.filters-block .btn').text('Показать еще ' + count + ' товаров');
+    } else {
+        $('.filter').removeClass('filter--active'); // если можно только один активный фильтр
+        $(this).addClass('filter--active');
+    }
 })
 
 $('.product-card__color').click(function() {
@@ -232,6 +218,10 @@ $('.filters').click(function() {
     $('.filters-block').addClass('filters-block--active');
     $('body').css('overflow', 'hidden');
     $('body').addClass('body--overlay');
+})
+$('.pagination__item').click(function() {
+    $('.pagination__item').removeClass('pagination__item--active');
+    $(this).addClass('pagination__item--active');
 })
 $('.filters-block__img').click(function() {
     $('.filters-block').removeClass('filters-block--active');
@@ -308,4 +298,51 @@ $('.rewievs__btn').click(function() {
 $('.product-card__more').click(function() {
     $(this).css('display', 'none');
     $('.product-card__text').append('Миндальное гидрофильное масло для умывания и&nbsp;снятия макияжа. Марокканская роза на&nbsp;основе масел с&nbsp;добавлением перемолотых трав и&nbsp;цветов мягко очищает кожу, придает тонус и&nbsp;окутывает нежной цветочной дымкой.')
+});
+$('.data__content--media').click(function() {
+    $(this).parent('.data__item').toggleClass('data__item--nonactive');
+    if ($(this).parent('.data__item').hasClass('data__ingridients')) {
+        $('.ingridients').toggleClass('ingridients--nonactive');
+    }
 })
+$('.colors__more').click(function() {
+    $('.media-block').addClass('media-block--active');
+    $('.media-block__colors').addClass('media-block__colors--active');
+
+    $('body').css('overflow', 'hidden');
+    $('body').addClass('body--overlay');
+})
+$('.media-block__close').click(function() {
+    $('.media-block').removeClass('media-block--active');
+    $('.media-block__colors').removeClass('media-block__colors--active');
+    $('.media-block__buy').removeClass('media-block__buy--active');
+    $('.media-block').css('top', '20%');
+    $('body').css('overflow', 'auto');
+    $('body').removeClass('body--overlay');
+})
+$('.shops').click(function() {
+    $('.media-block').css('top', '60%');
+    $('.media-block').addClass('media-block--active');
+    $('.media-block__buy').addClass('media-block__buy--active');
+    $('body').css('overflow', 'hidden');
+    $('body').addClass('body--overlay');
+})
+$(document).ready(function() {
+
+    var button = $('.fixed');
+    var buttonOffsetTop = button.offset().top - $(window).height() + button.height();
+
+    $(window).scroll(function() {
+
+        let scrollY = $(window).scrollTop();
+
+        if (scrollY >= buttonOffsetTop) {
+            button.addClass('sticky');
+            button.addClass('container');
+        } else {
+            button.removeClass('sticky');
+            button.removeClass('container');
+        }
+    });
+});
+//  клики на краски

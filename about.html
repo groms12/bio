@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global BIO</title>
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/hauora.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -23,13 +25,13 @@
         <div class="header-menu">
             <div class="container">
                 <div class="menu">
-                    <a href="catalog.html" class="link">Новое</a>
+                    <a href="catalog.html" class="link link--active">Новое</a>
                     <a href="#" class="link">Лицо</a>
                     <a href="#" class="link">Тело</a>
                     <a href="#" class="link">Уход за волосами</a>
                     <a href="#" class="link">Окрашивание</a>
                     <a href="#" class="link">Для дома</a>
-                    <a href="brands.html" class="link link--active">Бренды</a>
+                    <a href="brands.html" class="link">Бренды</a>
                 </div>
             </div>
         </div>
@@ -69,7 +71,89 @@
             </div>
         </div>
     </header>
-    <section class="brands brands__page">
+    <section class="banner company">
+        <img src="assets/img/banners/banner-company.jpg" alt="" class="banner__img company__img">
+        <div class="banner__info company__info">
+            <!-- <div class="container"> -->
+            <h2 class="title banner__title company__title">global bio cosmetic</h2>
+            <!-- </div> -->
+        </div>
+    </section>
+    <section class="about about--reverse company__about">
+        <div class="container container--2">
+            <div class="about__content">
+                <div class="about__info">
+                    <img src="assets/img/about/eye.jpg" alt="">
+                    <h2 class="title about__title">№ 1 ПРОИЗВОДИТЕЛЬ КОСМЕТИКИ В НАПРАВЛЕНИИ <span>CLEAN BEAUTY</span></h2>
+                    <div class="about__quote quote">
+                        <img class="quote__marks" src="assets/img/about/marks.svg">
+                        <p class="quote__text">
+                            <div class="about__text about__text--small">Мы соединяем научные открытия со всего мира и силу природы, воплощая все это в <span>CLEAN BEAUTY</span> </div>
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/img/about/face.jpg" alt="img" class="about__img">
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="line"></div>
+    </div>
+    <section class="info">
+        <div class="container container--2">
+            <h2 class="title info__title">
+                <span>Мы поставили на первое место </span><span>безопасность и эффективность косметики</span>
+            </h2>
+            <div class="info__block">
+                <p class="info__item">Только эффективные пептиды, выделенные из растений, активы, экстракты и масла.</p>
+                <p class="info__item">Наши формулы не содержат: ни барабанов, ни фталатов, ни токсичный консервантов, ни продуктов нефтехимии. </p>
+                <p class="info__item">Формулы наших средств разработаны в коллаборации с ведущими научными лабораториями Франции, России и Южной Кореи.</p>
+            </div>
+        </div>
+    </section>
+    <section class="phrase">
+        <div class="container container--2">
+            <img src="assets/img/about/img-top.jpg" alt="" class="phrase__img phrase__img--left">
+            <h3 class="title phrase__title">Мы соединяем инновации, научные открытия и силу природы, воплощая все это в CLEAN BEAUTY.</h3>
+            <img src="assets/img/about/img-bottom.jpg" alt="" class="phrase__img phrase__img--right">
+        </div>
+    </section>
+    <section class="block">
+        <div class="container container--2">
+            <div class="block__items">
+                <div class="block__item">
+                    <span class="block__num">01</span>
+                    <h4 class="block__title">Global</h4>
+                    <p class="block__text">
+                        <span>Наши средства созданы в коллаборации с лабораториями и научными центрами центрами Франции, России, Южной Кореи, Италии.</span>
+                        <span>Лучшие ученые и эксперты трудились над разработкой наших формул для максимально эффективного и комфортного ухода за кожей и волосами.</span>
+                    </p>
+                </div>
+                <div class="block__item">
+                    <span class="block__num">02</span>
+                    <h4 class="block__title">bio</h4>
+                    <p class="block__text">
+                        <span>В основе нащих формул — эффективные органические и безопасные компоненты.</span>
+                        <span>Косметика до 98% натуральных ингредиентов, выращенных без пестицидов, гербицидов и других вредных веществ.</span>
+                        <span>Мы искренне любим и ценим эту планету. Снижем вес пластика в наших упаковках. Используем биоразлагаемые ингредиенты, колпачки и баночки подлежат переработке и при вашем желании дать им вторую жизнь — перерождаются в аксессуары для дома и другие полезные вещи.</span>
+                    </p>
+                </div>
+                <div class="block__item">
+                    <span class="block__num">03</span>
+                    <h4 class="block__title">cosmetic</h4>
+                    <p class="block__text">
+                        <span>Наш основной принцип: натуральная косметика должна быть эффективной.</span>
+                        <span>Мы ценим доверие женщин и стараемся оправдать их самые высокие ожидания.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="line"></div>
+    </div>
+    <section class="brands">
         <div class="container">
             <h2 class="title brands__title">Бренды</h2>
             <div class="brands__content">
@@ -237,7 +321,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

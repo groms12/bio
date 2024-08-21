@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global BIO</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/hauora.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -18,20 +18,35 @@
                 <div class="header__media"><span></span><span></span></div>
                 <a href="home.html"><img src="assets/img/header/logo.svg" alt="" class="logo"></a>
                 <div class="search">
-                    <span>Поиск</span><img src="assets/img/header/search.svg" alt="">
+                    <span>Поиск</span><img src="assets/img/header/search.svg" alt="" class="search__open">
+                    <img src="assets/img/icons/close.svg" alt="" class="search__close">
                 </div>
             </div>
         </div>
         <div class="header-menu">
             <div class="container">
                 <div class="menu">
-                    <a href="catalog.html" class="link link--active">Новое</a>
+                    <a href="catalog.html" class="link">Новое</a>
                     <a href="#" class="link">Лицо</a>
                     <a href="#" class="link">Тело</a>
                     <a href="#" class="link">Уход за волосами</a>
                     <a href="#" class="link">Окрашивание</a>
                     <a href="#" class="link">Для дома</a>
                     <a href="brands.html" class="link">Бренды</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__search">
+            <div class="container">
+                <div class="search__item">
+                    <input class="search__inp" type="text" placeholder="хочу Найти...">
+                    <span class="search__del">Очистить</span>
+                </div>
+                <div class="search__content">
+                    <a class="link" href="catalog.html">Шампунь</a>
+                    <a class="link" href="catalog.html">Восстанавливающий шампунь</a>
+                    <a class="link" href="catalog.html">Шампунь для объема</a>
+                    <a class="link" href="catalog.html">Професиональный шампунь</a>
                 </div>
             </div>
         </div>
@@ -61,8 +76,12 @@
                     <a class="link menu-media__mail" href="mailto:info@gbcosmetic.ru">info@gbcosmetic.ru</a>
                 </div>
                 <div class="menu-media__right">
-                    <a href="#"><img src="assets/img/social/icn_social_vk.svg" alt="vk"></a>
-                    <a href="#"><img src="assets/img/social/icn_social_telegram.svg" alt="tg"></a>
+                    <a href="#" class="link"><svg class="icon">
+                        <use xlink:href="assets/img/social/sprite.svg#icn_social_vk"></use>
+                      </svg></a>
+                    <a href="#" class="link"><svg class="icon">
+                        <use xlink:href="assets/img/social/sprite.svg#icn_social_telegram"></use>
+                    </svg></a>
                 </div>
             </div>
         </div>
@@ -103,9 +122,14 @@
                     </div>
                 </div>
             </div>
+            <div class="container container-arrow">
+                <div class="swiper-button-prev5"></div>
+                <div class="swiper-button-next5"></div>
+            </div>
             <div class="container pag-container">
                 <div class="swiper-pagination"></div>
             </div>
+
         </div>
     </div>
     <!-- <section class="banner">
@@ -162,7 +186,7 @@
                 <div class="best__slider slider__slider swiper">
                     <div class="swiper-container best-slider">
                         <div class="swiper-wrapper">
-                            <div class="card swiper-slide">
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -176,8 +200,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -191,8 +215,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -206,8 +230,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -221,8 +245,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -236,8 +260,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -251,8 +275,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -266,8 +290,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -281,8 +305,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -296,7 +320,7 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-scrollbar"></div>
                     </div>
@@ -308,7 +332,7 @@
         </div>
     </section>
     <section class="about">
-        <div class="container">
+        <div class="container container--2">
             <div class="about__content">
                 <div class="swiper about__swiper">
                     <div class="swiper-container swiper-about">
@@ -327,7 +351,8 @@
                     </div>
                 </div>
                 <div class="about__info">
-                    <h2 class="about__title">GLOBAL BIO COSMETIC — № 1 ПРОИЗВОДИТЕЛЬ КОСМЕТИКИ В НАПРАВЛЕНИИ
+                    <h2 class="about__title">
+                        <span>GLOBAL BIO COSMETIC — </span> № 1&nbsp;ПРОИЗВОДИТЕЛЬ КОСМЕТИКИ В НАПРАВЛЕНИИ
                         <span>CLEAN BEAUTY</span></h2>
                     <p class="about__text">
                         <span>Мы объединили свою страсть к чистым растительным ингредиентам, биотехнологиям и бережное отношение к природе и поставили на первое место безопасность и эффективность косметики.</span>
@@ -342,46 +367,66 @@
         <div class="container">
             <h2 class="title brands__title">Бренды</h2>
             <div class="brands__content">
-                <div class="brands__item brand only-bio">
+                <a href="brands.html" class="brands__item brand only-bio">
                     <div class="brand__text">
                         <p class="brand__title">only bio</p>
                         <p class="brand--text">Эко-ответсвенная косметика, созданная по строгим европейским стандартам качества.</p>
                     </div>
-                    <a href="#" class="brand__link link"><img src="assets/img/icons/button_slide.svg" alt=">"></a>
+                    <span class="brand__link link">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#arrow-right-gray"></use>
+                        </svg>
+                    </span>
                     <img src="assets/img/brands/only-bio.png" alt="" class="brand__img">
-                </div>
-                <div class="brands__item brand miss-organic">
+                </a>
+                <a href="brands.html" class="brands__item brand miss-organic">
                     <div class="brand__text">
                         <p class="brand__title">miss organic</p>
                         <p class="brand--text">Современная косметика на основе органических компонентов. Выращено на эко фермах.</p>
                     </div>
-                    <a href="#" class="brand__link link"><img src="assets/img/icons/button_slide.svg" alt=">"></a>
+                    <span class="brand__link link">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#arrow-right-gray"></use>
+                        </svg>
+                    </span>
                     <img src="assets/img/brands/miss-organic.png" alt="" class="brand__img">
-                </div>
-                <div class="brands__item brand stylist-pro">
+                </a>
+                <a href="brands.html" class="brands__item brand stylist-pro">
                     <div class="brand__text">
                         <p class="brand__title">STYLIST PRO</p>
                         <p class="brand--text">Твой персональный стилист в уходе за волосами.</p>
                     </div>
-                    <a href="#" class="brand__link link"><img src="assets/img/icons/button_slide.svg" alt=">"></a>
+                    <span class="brand__link link">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#arrow-right-gray"></use>
+                        </svg>
+                    </span>
                     <img src="assets/img/brands/stylist-pro.png" alt="" class="brand__img">
-                </div>
-                <div class="brands__item brand beauty-ferma brands--item5">
+                </a>
+                <a href="brands.html" class="brands__item brand beauty-ferma brands--item5">
                     <div class="brand__text">
                         <p class="brand__title">BEAUTY FERMA</p>
                         <p class="brand--text">натуральная косметика близкая к природе. Ингредиенты выращенные на эко фермах.</p>
                     </div>
-                    <a href="#" class="brand__link link"><img src="assets/img/icons/button_slide.svg" alt=">"></a>
+                    <span class="brand__link link">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#arrow-right-gray"></use>
+                        </svg>
+                    </span>
                     <img src="assets/img/brands/beauty-ferma.png" alt="" class="brand__img">
-                </div>
-                <div class="brands__item brand estetique">
+                </a>
+                <a href="brands.html" class="brands__item brand estetique">
                     <div class="brand__text">
                         <p class="brand__title">estetique</p>
                         <p class="brand--text">Косметика с клинически доказанной эффективностью. Волшебство науки от лучших экспертов.</p>
                     </div>
-                    <a href="#" class="brand__link link"><img src="assets/img/icons/button_slide.svg" alt=">"></a>
+                    <span class="brand__link link">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#arrow-right-gray"></use>
+                        </svg>
+                    </span>
                     <img src="assets/img/brands/estetique.png" alt="" class="brand__img">
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -395,7 +440,7 @@
                 <div class="slider__slider reccomend__slider swiper">
                     <div class="swiper-container reccomend-slider">
                         <div class="swiper-wrapper">
-                            <div class="card swiper-slide">
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -409,8 +454,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -424,8 +469,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -439,8 +484,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -454,8 +499,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -469,8 +514,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -484,8 +529,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -499,8 +544,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -514,8 +559,8 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card swiper-slide">
+                            </a>
+                            <a href="product.html" class="card swiper-slide">
                                 <div class="card__tags">
                                     <div class="tag">ECO</div>
                                     <div class="tag tag--active">BEST</div>
@@ -529,7 +574,7 @@
                                         <div class="btn-s btn-s--secondary">Купить</div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-scrollbar"></div>
                     </div>
@@ -641,8 +686,12 @@
                     <span>107553, г. Москва, ул. 1-я Пугачевская, 25с1</span>
                     <a href="mailto:info@gbcosmetic.ru" class="link footer__mail">info@gbcosmetic.ru</a>
                     <div class="footer__social">
-                        <a href="#" class="link"><img src="assets/img/social/icn_social_vk.svg" alt="vk"></a>
-                        <a href="#" class="link"><img src="assets/img/social/icn_social_telegram.svg" alt="telegram"></a>
+                        <a href="#" class="link"><svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#icn_social_vk"></use>
+                          </svg></a>
+                        <a href="#" class="link"><svg class="icon">
+                            <use xlink:href="assets/img/social/sprite.svg#icn_social_telegram"></use>
+                        </svg></a>
                     </div>
                 </div>
             </div>
@@ -650,7 +699,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
