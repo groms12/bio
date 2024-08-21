@@ -3607,7 +3607,7 @@ body {
         max-width: auto;
     }
     .product {
-        height: 309px;
+        height: auto;
     }
 }
 
@@ -3722,7 +3722,7 @@ body {
     }
     .products {
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: space-between;
         flex-wrap: wrap;
         grid-gap: 0;
