@@ -297,7 +297,7 @@ $('.rewievs__btn').click(function() {
 })
 $('.product-card__more').click(function() {
     $(this).css('display', 'none');
-    $('.product-card__text').append('Миндальное гидрофильное масло для умывания и&nbsp;снятия макияжа. Марокканская роза на&nbsp;основе масел с&nbsp;добавлением перемолотых трав и&nbsp;цветов мягко очищает кожу, придает тонус и&nbsp;окутывает нежной цветочной дымкой.')
+    $('.product-card__text').css('display', 'block');
 });
 $('.data__content--media').click(function() {
     $(this).parent('.data__item').toggleClass('data__item--nonactive');
